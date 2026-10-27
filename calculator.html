@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#064e3b">
+    <title>Student Calculator | Umar International High School</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <main class="calculator-container">
+        <div class="school-logo" aria-hidden="true">UIH</div>
+        <header>
+            <h1>Umar International High School</h1>
+            <p class="matric">CSA/2025/38602</p>
+        </header>
+
+        <section class="calculator" aria-label="Calculator">
+            <p class="welcome-message" id="welcome-message">Student Calculator</p>
+            <output id="display" aria-label="Calculator display" aria-live="polite">0</output>
+            <div class="buttons">
+                <button class="clear" type="button" data-action="clear">AC</button>
+                <button class="operator" type="button" data-action="delete" aria-label="Delete last digit">DEL</button>
+                <button class="operator" type="button" data-operator="/">÷</button>
+                <button class="operator" type="button" data-operator="*">×</button>
+
+                <button type="button" data-number="7">7</button>
+                <button type="button" data-number="8">8</button>
+                <button type="button" data-number="9">9</button>
+                <button class="operator" type="button" data-operator="-">−</button>
+
+                <button type="button" data-number="4">4</button>
+                <button type="button" data-number="5">5</button>
+                <button type="button" data-number="6">6</button>
+                <button class="operator" type="button" data-operator="+">+</button>
+
+                <button type="button" data-number="1">1</button>
+                <button type="button" data-number="2">2</button>
+                <button type="button" data-number="3">3</button>
+                <button class="equal" type="button" data-action="equals">=</button>
+
+                <button class="zero" type="button" data-number="0">0</button>
+                <button type="button" data-action="decimal">.</button>
+            </div>
+        </section>
+
+        <button class="logout" type="button" id="logout-button">Log out</button>
+        <footer class="footer">&copy; 2026 Umar International High School</footer>
+    </main>
+    <script src="calculator.js"></script>
+</body>
+</html>
